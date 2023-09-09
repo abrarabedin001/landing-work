@@ -31,12 +31,17 @@ const ButtonPrimary: NextPage<ButtonPrimaryType> = ({
   }, [propPosition, propWidth, propTop, propRight, propLeft]);
 
   return (
-    <div
-      className="rounded bg-color-2 h-12 flex flex-row py-0 px-4 box-border items-center justify-center text-left text-lg text-white font-body"
-      style={buttonPrimaryStyle}
-    >
-      <b className="relative leading-[28px]">{buttonText}</b>
-    </div>
+    // <div
+    //   className="rounded bg-color-2 h-12 flex flex-row py-0 px-4 box-border items-center justify-center text-left text-lg text-white font-body"
+    //   style={buttonPrimaryStyle}
+    // >
+    //   <b className="relative leading-[28px]">{buttonText}</b>
+    // </div>
+    <button
+    className="rounded bg-color-2 h-12 flex flex-row py-0 px-4 box-border items-center justify-center text-left text-lg text-white font-body  hover:scale-105"
+      >
+      {buttonText}
+    </button>
   );
 };
 
